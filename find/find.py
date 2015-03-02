@@ -5,7 +5,7 @@ import re
 import os
 
 # Get the start directory.
-start = sys.argv[1]
+start = os.path.normpath(sys.argv[1])
 
 # Get the patterns from the command line arguments.
 pattern = sys.argv[2]
